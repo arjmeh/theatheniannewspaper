@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Roundhand";
+    src: url(SnellRoundhand.ttc);
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.title {
+    font-family: "Roundhand";
+    text-align: center;
+    font-size: 4em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    padding: 1rem;
+}
+/* Computer Size */
+@media (min-width: 1001px) {
+
+    /* Main Article  */
+
+    .main-article-container {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        padding: 0;
+    }
+
+    .main-article-image {
+        height: 80%;
+    }
+    .main-article-title {
+        font-size: 3em;
+        text-align: center;
+    }
+    /* Main Article Image */
+    .main-article-center {
+        text-align: center;
+        padding:0;
+    }
+
+    .main-article-image {
+        width: 50vw;
+
+    }
+    .main-article-left {
+        padding: 0;
+    }
+    /* Normal Articles */
+    .article-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6rem;
+    }
+    .article-title {
+        text-align: center;
+    }
+    .article {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    /* Normal Articles Left */
+    .article-container-left {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 1rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    /* Normal Articles Right */
+    .article-container-right {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Normal Article Image */
+    .article-image {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1000px) {
+    /* Main Article  */
+    .main-article-container {
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        border-bottom: 0.1rem solid black;
+        height: auto;
+    }
+    .main-article-image {
+        width: 60%;
+        height: 100%;
+
+    }
+
+    .main-article-title {
+        font-size: 3em;
+        text-align: center;
+    }
+    .main-article-center {
+        text-align: center;
+    }
+
+    /* Normal Articles */
+    .article-container {
+        text-align: center;
+    }
+    .article-image {
+        width: 60%;
+    }
+    .article-title {
+        text-align: center;
+    }
+    .article {
+        border-bottom: 0.1rem solid black;
+    }
+    
+}
