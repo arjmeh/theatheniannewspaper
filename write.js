@@ -8,7 +8,7 @@ function submit() {
     console.log(imagelink);
     console.log(article);
 
-    fetch(link + 'post/', {
+    fetch(link + 'post', {
         method: 'POST',
         mode: 'cors',
         headers: {
