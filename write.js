@@ -1,4 +1,4 @@
-const link = 'http://arjmeh.pythonanywhere.com/'
+const link = 'https://arjmeh.pythonanywhere.com/'
 function submit() {
     var articletype = document.getElementById('selector').value;
     var imagelink  = document.getElementById('imagelink').value;

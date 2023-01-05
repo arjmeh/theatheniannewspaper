@@ -1,4 +1,4 @@
-const link = 'http://arjmeh.pythonanywhere.com/'
+const link = 'https://arjmeh.pythonanywhere.com/'
 
 fetch(link + 'get')
 .then(response => response.text())
