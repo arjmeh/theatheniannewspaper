@@ -101,19 +101,22 @@ img {
     /* Main Article  */
     .main-article-container {
         display: grid;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         border-bottom: 0.1rem solid black;
         height: auto;
+        display: none;
     }
     .main-article-image {
         width: 60%;
         height: 100%;
+        display: none;
 
     }
 
     .main-article-title {
         font-size: 3em;
         text-align: center;
+        display: none;
     }
     .main-article-center {
         text-align: center;
