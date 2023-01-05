@@ -13,7 +13,7 @@ function submit() {
         mode: 'cors',
         headers: {
             'Content-Type' : 'application/json',
-            'Access-Control-Allow-Origin': 'https://arjmeh.pythonanywhere.com/',
+            'Access-Control-Allow-Origin': 'https://theatheniannewspaper.netlify.app',
         },
         body: JSON.stringify({[articletype]: {
             title: title,
