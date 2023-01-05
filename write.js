@@ -1,4 +1,4 @@
-const link = 'https://arjmeh.pythonanywhere.com/'
+const link = 'https://arjmeh.pythonanywhere.com'
 function submit() {
     var articletype = document.getElementById('selector').value;
     var imagelink  = document.getElementById('imagelink').value;
@@ -8,7 +8,7 @@ function submit() {
     console.log(imagelink);
     console.log(article);
 
-    fetch(link + 'post', {
+    fetch(link + '/post', {
         method: 'POST',
         mode: 'cors',
         headers: {
