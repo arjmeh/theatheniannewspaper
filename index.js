@@ -82,8 +82,20 @@ fetch(link + 'get', {mode: 'cors'})
     }
 }
     })
-
-
+var darkmode = false;
+var darkmodebtn = document.getElementById('darkmode');
+darkmodebtn.addEventListener('click', function () {
+    if (!darkmode) {
+    document.body.style.backgroundColor = 'rgb(49,52,62)';
+    document.body.style.color = 'white';
+    darkmode = true;
+    }
+    else {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+        darkmode = false;
+    }
+});
     // const link = 'http://127.0.0.1:5000'
 
     // fetch(link + '/get', {method: 'GET', mode: 'cors'})

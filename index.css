@@ -139,6 +139,9 @@ img {
     .article {
         border-bottom: 0.1rem solid black;
     }
+    #darkmode {
+        display: none;
+    }
     
 }
 
