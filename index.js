@@ -4,7 +4,7 @@ fetch(link + '/get', {mode: 'no-cors'})
 .then(response => response.text())
     .then(data => {
     const responsedata = JSON.parse(data);
-    console.log(responsedata);
+    console.log(data);
     // main article
     var mainarticletitle = document.getElementById('main-article-title');
     var mainarticleleft = document.getElementById('main-article-left-text');
