@@ -10,7 +10,7 @@ function submit() {
 
     fetch(link + '/post', {
         method: 'POST',
-        mode: 'no-cors',
+        mode: 'cors',
         headers: {
             'Content-Type' : 'application/json',
             'Access-Control-Allow-Origin': 'https://theatheniannewspaper.netlify.app',

@@ -1,6 +1,6 @@
 const link = 'https://arjmeh.pythonanywhere.com'
 
-fetch(link + '/get', {mode: 'no-cors'})
+fetch(link + '/get', {mode: 'cors'})
 .then(response => response.text())
     .then(data => {
     const responsedata = JSON.parse(data);
