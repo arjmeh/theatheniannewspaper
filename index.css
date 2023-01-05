@@ -99,6 +99,10 @@ img {
 
 @media (max-width: 1000px) {
     /* Main Article  */
+    .grid-container {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
     .main-article-container {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
