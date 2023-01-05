@@ -96,6 +96,22 @@ darkmodebtn.addEventListener('click', function () {
         darkmode = false;
     }
 });
+
+
+fetch(link + '/viewercount', {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+    }
+})
+.then(response => response.text())
+.then(data => {
+    var viewerbox = document.getElementById('viewerbox');
+    const responseData = JSON.parse(data);
+    viewerbox.style.textAlign = 'center';
+    viewerbox.innerHTML = responseData + ' people have visited this website.';
+})
     // const link = 'http://127.0.0.1:5000'
 
     // fetch(link + '/get', {method: 'GET', mode: 'cors'})
