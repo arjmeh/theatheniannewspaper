@@ -13,7 +13,7 @@ function submit() {
         mode: 'cors',
         headers: {
             'Content-Type' : 'application/json',
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': 'https://arjmeh.pythonanywhere.com/',
         },
         body: JSON.stringify({[articletype]: {
             title: title,
