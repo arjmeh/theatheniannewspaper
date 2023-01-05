@@ -13,7 +13,7 @@ function submit() {
         mode: 'cors',
         headers: {
             'Content-Type' : 'application/json',
-            'Access-Control-Allow-Origin': 'ht',
+            'Access-Control-Allow-Origin': '*',
         },
         body: JSON.stringify({[articletype]: {
             title: title,
