@@ -141,3 +141,13 @@ img {
     }
     
 }
+
+#darkmode {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: white;
+}
+#darkmode:hover {
+    background-color: rgb(203, 203, 203);
+}
