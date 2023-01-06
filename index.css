@@ -150,7 +150,7 @@ img {
     right: 30px;
     bottom: 30px;
     background-color: white;
-    border: 10px solid black;
+    border: 4px solid black;
 }
 #darkmode:hover {
     background-color: rgb(203, 203, 203);
