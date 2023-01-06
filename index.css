@@ -23,7 +23,11 @@ img {
     text-align: center;
     font-size: 4em;
 }
-
+.credits {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
 .grid-container {
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -155,3 +159,4 @@ img {
 #darkmode:hover {
     background-color: rgb(203, 203, 203);
 }
+
