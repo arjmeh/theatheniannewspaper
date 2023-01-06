@@ -112,6 +112,33 @@ fetch(link + '/viewercount', {
     viewerbox.style.textAlign = 'center';
     viewerbox.innerHTML = responseData + ' people have visited this website.';
 })
+
+//main article likes
+var mainarticlelikestext = document.getElementById('main-article-likes');
+fetch(link + '/mainarticlelikes', {
+    method: 'GET',
+    mode: 'cors',
+    headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+    }
+})
+.then(response => response.text())
+.then(data => {
+    var responsedata = JSON.parse(data);
+    mainarticlelikestext.innerHTML = responsedata;
+})
+
+
+
+var mainarticleliked = false;
+var mainarticleheart = document.getElementById('heart');
+mainarticleheart.addEventListener('click', function () {
+    mainarticleliked = true;
+    heart.src = 'filledheart.png';
+})
+
+
     // const link = 'http://127.0.0.1:5000'
 
     // fetch(link + '/get', {method: 'GET', mode: 'cors'})

@@ -4,6 +4,7 @@ function submit() {
     var imagelink  = document.getElementById('imagelink').value;
     var article = document.getElementById('article').value;
     var title = document.getElementById('title').value;
+    var likes = 0;
     console.log(articletype);
     console.log(imagelink);
     console.log(article);
@@ -19,7 +20,8 @@ function submit() {
             title: title,
             articletype: articletype,
             imagelink: imagelink,
-            article: article
+            article: article,
+            likes: likes
         }})
 
     })
