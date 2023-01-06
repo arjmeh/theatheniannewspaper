@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sanfran;
 }
 body {
     overflow-x: hidden;
@@ -10,6 +10,14 @@ body {
 @font-face {
     font-family: "Roundhand";
     src: url(SnellRoundhand.ttc);
+    font-weight: normal;
+    font-style: normal;
+}
+
+ 
+@font-face {
+    font-family: "sanfran";
+    src: url(SFUIText-Bold.otf);
     font-weight: normal;
     font-style: normal;
 }
