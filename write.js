@@ -52,7 +52,7 @@ function submit() {
         var firstFiveWords = article.substr(0, article.indexOf(" ", 40));
         var notification = new Notification(title, {
             body: firstFiveWords + "... Read More",
-            icon: imagelink
+            icon: 'apple-touch-icon.png'
           });
             
     }
