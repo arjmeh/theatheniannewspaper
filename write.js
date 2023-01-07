@@ -1,4 +1,4 @@
-const link = 'https://atnewsbackend.herokuapp.com/'
+const link = 'https://csanewsbackend.herokuapp.com/'
 
 //cookies
 function setCookie(name, value, days) {
@@ -32,7 +32,7 @@ function submit() {
     console.log(imagelink);
     console.log(article);
 
-    fetch(link + 'post', {
+    fetch(link + 'postnews', {
         method: 'POST',
         mode: 'cors',
         headers: {

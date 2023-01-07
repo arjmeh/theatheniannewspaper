@@ -1,4 +1,4 @@
-const link = 'https://atnewsbackend.herokuapp.com/'
+const link = 'https://csanewsbackend.herokuapp.com/'
 
 //cookies
 function setCookie(name, value, days) {
@@ -23,7 +23,7 @@ function setCookie(name, value, days) {
 
 
 
-fetch(link + 'get', {mode: 'cors'})
+fetch(link + 'getnews', {mode: 'cors'})
 .then(response => response.text())
     .then(data => {
     const responsedata = JSON.parse(data);
